@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
+  <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  <title>Enhancing the security of the OLSR Protocol</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  
+  <script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+
+	<div id="navbar-main">
+    <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" class="smoothScroll">Home</a></li>
+		<li> <a href="domain.html" class="smoothScroll"> Domain</a></li>
+		<li> <a href="milestones.html" class="smoothScroll"> Milestones</a></li>
+		<li> <a href="documents.html"> Documents</a></li>
+		<li> <a href="slides.html" class="smoothScroll"> Slides</a></li>
+		<li> <a href="about.html" class="smoothScroll"> About Us</a></li>
+		<li> <a href="contact.html" class="smoothScroll"> Contact</a></li>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  </div>
+
+
+	<div class="container margin-top" id="contact" name="contact">
+		<div class="row">
+		<br>
+			<h1 class="centered">Domain</h1>
+			<hr>
+			<br>
+			<div class="col-lg-8 col-lg-offset-2">
+			  <div>
+          <h3>Literature survey</h3>
+          <p align="justify">MANETS are one of the popular emerging technologies nowadays. They are composed of laptops, mobile phones and PDAs to support the dynamic and mobile nature. These characteristics make it ideal to be used in harsh conditions with limited resources. The intermediate devices, between the source and the destination are used to bridge the communication gap. In order for a MANET to be effectively functional it is imperative that all the devices participate in routing. There is a risk of nodes being selfish or malicious, which will cause the performance of the network to degrade. Therefore it is important when a route is selected such misbehaving nodes are eliminated.</p>
+
+          <p align="justify">The devices that participate in MANETS are mobile devices such as mobile phones, laptops, PDAs and etc. These devices have limited processing abilities and power. Therefore it is important that the power is conserved when used in a MANET. Communication in a MANET is usually carried out through broadcasting where in between devices should participate to send the packet from source to destination. Due to this and the mobile wireless nature it makes the communication unreliable.</p>
+
+          <p align="justify">It is difficult to use typical routing protocols in mobile ad-hoc networks due to this dynamic nature. For ad-hoc routing, altered routing protocols were introduced. They are mainly of two types, proactive and reactive. Proactive protocols are table based and the routes to other devices in the network are previously known. OLSR, DSDV are some examples of proactive protocols. Reactive protocols differ from proactive protocols with the concept of on demand routing. They figure out the routes to the destination only when it is required. AODV and DSR are some examples for reactive protocols. OLSR (Optimized Link State Routing) is a proactive protocol. It is the optimized version of Link State Routing protocol. OLSR is one of the popular and currently the best protocol for large ad-hoc networks. It yields performs all other routing protocols for large MANETs</p>
+
+          <p align="justify">OLSR is an optimized version of traditional link state routing protocol. OLSR has selected a set of nodes called MultiPoint Relays (MPR). MPR is the reason for the high performance and efficiency of the OLSR protocol. Each node selects a set of one hop neighbors which will cover all its two hop neighbors in the range. Only the selected MPRs are responsible to forward the message for two hop neighbors reducing the flooding and the overall traffic of the network. Each node only forwards the message to the selected MPR set.</p>
+        </div>
+
+        <div>
+          <h3>Research gap</h3>
+          <p align="justify">Even though there are benefits from MPR selection, there is a downside to this as well. OLSR protocol lacks a way to verify the integrity of the MPR nodes. One of the major threats in OLSR protocol is malicious nodes impersonates to be MPRs of a particular node to receive all the traffic of the node. Currently there is no mechanism for OLSR protocol to detect and eliminate these nodes from the network. In our work we determine device trust using malware analysis. And Q-Learning agent is applied to each node to select the most trusted set of MPR nodes. Each node will act as a RL agent. The device trust is quantified by malware analysis. Currently the OLSR protocol select the most reliable and efficient set of MPRs, but in our work we modify the protocol to select the most trusted set of MPRs.</p>  
+
+          <p align="justify">It is crucial to accurately determine the trust of the devices that participate in the MANET. Any node causing even slight adversal behaviour is a threat to the network and may cause network poor network performance.Therefore when sending a packet from one node to another it is required to find the best and safest path, ther by making sure the packet reach the destination securely and fast. In  order to do that both nodal and well as the link trust should be considered. this allows to obtain an accurate trust measurement of the devices.</p> 
+        </div>
+
+        <div>
+          <h3>Research problem</h3>
+          <p> <h4>There are mainly three types of approaches that are used for Securing ad-hoc networks.</h4>
+
+<p><u>Cryptographic Methods</u></p>
+
+<p align="justify">Cryptographic methods use various encryption techniques often times combined with authentication to verify the nodes and timestamps to determine the freshness. The drawback of this technique is it fails to identify certain attacks such as wormholes and greyholes which characterise selfish nodes. and other major downfall is cryptographic techniques are power consuming. Since  devices used in MANETS have limited resources and power, this method is not ideal to be used in a MANET.</p>
+
+<p><u>Trust Based Methods</u></p>
+
+<p align="justify">Trust Based methods are mainly concerned with defining the correct behaviour. They monitor the behaviour of nodes and if nodes do not obey the set correct behaviour, these nodes will be eliminated from the network. This technique allows selfish neighbours to be detected and removed from the network.But when this technique is used it is difficult to determine the threshold as in how many packets should a node drop before it become a selfish node and how to introduce to change.</p>
+
+<p><u>Statistical Methods</u></p>
+
+<p align="justify">This methods rely on physical attributes of  the connection or the channel that is used to send the messages. But this should have a centralized knowledge in order to do this.</p>
+
+<p><u>Hybrid Methods</u></p>
+
+<p align="justify">Hybrid Methods are usually a combination of two or more of the above techniques. It tries to get the best of both worlds.  For example hybrid approach can use a trust based technique as well as cryptography method.</p>
+
+<p align="justify">Several attempts have been made to integrate trust as a form of security into ad-hoc routing protocols and to improve the security of the OLSR protocol. They are analyzed below. Adjih et al has proposed a way to secure OLSR protocol. A signature is generated for each OLSR control message. This signature is sent along with the message to prevent malicious nodes from modifying it. These signatures have a timestamp to determine the freshness of the message. An authentication check of information in the network is carried out with the use of distributed public keys. This approach can be used by other proactive routing protocols as well. Hafslund et al proposed a similar approach specifically for the OLSR protocol, which can be used as an extension to OLSR. But this approach will increase the overhead of the OLSR packet. </p>
+
+<p align="justify">Eventhough various methods were presented to improve the security of the OLSR protocol as well as MANET routing protocols. But none of the techniques use Reinforcement Learning particularly for OLSR protocol. Most of the defenses used to secure the OLSR protocol use signatures and keys to authenticate the messages and timestamps to prevent replay attacks. Using Reinforcement Learning, in MANETs to find the most trusted path is more applicable since these types of networks are prone to change often. Q-Learning is ideal for such environments since it is highly adaptive to change. Q-Learning can be used to eliminate the strict nature of trust based approaches.</p>
+        </div>
+
+        <div>
+          <h3>Research objectives</h3>
+          <br />
+          <h4>Main Objectives</h4> 
+          <br />
+          <p align="justify">Our main objective would be to add the security feature which lacks in the OLSR protocol, to the OLSR protocol. To achieve this main requirement we need to achieve number of specific requirements.</p>  
+
+          <h4>Specific Objectives</h4>
+          <br />
+            <ul>
+              <li>Design and implement MPR Sets in the MANET.</li>
+              <br />
+              <li>Use Deep Reinforcement Learning Algorithm to create an agent in the OLSR environment.</li>
+              <br />
+              <li>Identify selfish/malicious nodes in the MANET.</li>
+              <br />
+              <li>Integrate the DRL Algorithm inside the OLSR Protocol.</li>
+            </ul>
+            <br /><br /><br /><br />
+        </div>
+			</div><!-- col -->
+			
+		</div><!-- row -->
+	
+	</div><!-- container -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<h4>Team TOLSR - Copyrights Reserved 2017</h4>
+		</div>
+	</div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+	
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
+</html>
