@@ -4040,11 +4040,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #999;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #999;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #25a8d4;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
